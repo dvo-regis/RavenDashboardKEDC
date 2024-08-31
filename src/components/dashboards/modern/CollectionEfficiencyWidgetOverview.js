@@ -4,7 +4,6 @@ import { useTheme } from '@mui/material/styles';
 import { CardContent, Typography, Avatar, Grid, Stack, Box } from '@mui/material';
 import BlankCard from '../../shared/BlankCard';
 import { IconArrowDownRight } from '@tabler/icons';
-import icon2 from '../../../assets/images/svgs/icon-collectionefficiency.svg';
 
 const CollectionEfficiencyWidgetOverview = () => {
   // chart color
@@ -35,7 +34,7 @@ const CollectionEfficiencyWidgetOverview = () => {
     dataLabels: {
       enabled: true,
       formatter: function (val) {
-        return val + "%";
+        return val + '%';
       },
       style: {
         fontSize: '10px',
@@ -68,10 +67,10 @@ const CollectionEfficiencyWidgetOverview = () => {
     tooltip: {
       theme: theme.palette.mode === 'dark' ? 'dark' : 'light',
       y: {
-        formatter: function(val) {
-          return val + "%";
-        }
-      }
+        formatter: function (val) {
+          return val + '%';
+        },
+      },
     },
     title: {
       text: 'Past Four Months',
@@ -95,13 +94,14 @@ const CollectionEfficiencyWidgetOverview = () => {
     <BlankCard>
       <CardContent sx={{ p: '25px' }}>
         <Stack direction="row" spacing={2} alignItems="center">
-          <img src={icon2} alt="ATCC Icon" style={{ width: '24px', height: '24px' }} />
           <Typography variant="h5">Collection Efficiency</Typography>
         </Stack>
 
         <Grid container spacing={3} mt={2}>
           <Grid item xs={5} sx={{ paddingRight: '10px' }}>
-            <Typography variant="h4" mt={3} fontWeight={600}>58%</Typography>
+            <Typography variant="h4" mt={3} fontWeight={600}>
+              58%
+            </Typography>
             <Typography variant="subtitle2" fontSize="12px" color="textSecondary">
               (last month)
             </Typography>

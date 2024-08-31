@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import { CardContent, Typography, Avatar, Grid, Stack, Box } from '@mui/material';
 import BlankCard from '../../shared/BlankCard';
 import { IconArrowUpRight } from '@tabler/icons';
-import icon2 from '../../../assets/images/svgs/icon-TotalCost.svg';
+import icon2 from '../../../assets/images/svgs/icon-Totalcost.svg';
 
 const TotalCostWidgetOverview = () => {
   // chart color
@@ -68,10 +68,10 @@ const TotalCostWidgetOverview = () => {
     tooltip: {
       theme: theme.palette.mode === 'dark' ? 'dark' : 'light',
       y: {
-        formatter: function(val) {
+        formatter: function (val) {
           return '₦' + val + 'm';
-        }
-      }
+        },
+      },
     },
     title: {
       text: 'Past Four Months',
@@ -101,7 +101,9 @@ const TotalCostWidgetOverview = () => {
 
         <Grid container spacing={3} mt={2}>
           <Grid item xs={5} sx={{ paddingRight: '10px' }}>
-            <Typography variant="h4" mt={3} fontWeight={600}>₦58.69bn</Typography>
+            <Typography variant="h4" mt={3} fontWeight={600}>
+              ₦58.69bn
+            </Typography>
             <Typography variant="subtitle2" fontSize="12px" color="textSecondary">
               (last month)
             </Typography>

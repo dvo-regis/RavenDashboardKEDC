@@ -68,10 +68,10 @@ const TATWidgetOverview = () => {
     tooltip: {
       theme: theme.palette.mode === 'dark' ? 'dark' : 'light',
       y: {
-        formatter: function(val) {
-          return  val + 'Hrs';
-        }
-      }
+        formatter: function (val) {
+          return val + 'Hrs';
+        },
+      },
     },
     title: {
       text: 'Past Four Months',
@@ -101,7 +101,9 @@ const TATWidgetOverview = () => {
 
         <Grid container spacing={3} mt={2}>
           <Grid item xs={5} sx={{ paddingRight: '10px' }}>
-            <Typography variant="h4" mt={3} fontWeight={600}>14.76 Hrs</Typography>
+            <Typography variant="h4" mt={3} fontWeight={600}>
+              14.76 Hrs
+            </Typography>
             <Typography variant="subtitle2" fontSize="12px" color="textSecondary">
               (last month)
             </Typography>
