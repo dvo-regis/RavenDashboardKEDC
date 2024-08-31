@@ -26,7 +26,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist', // Ensure this matches the directory you are deploying
-    base: process.env.NODE_ENV === 'production' ? '/RavenDashboardKEDC/' : '/', // Add this line
+    base: '/RavenDashboardKEDC/', // Add this line
   },
   optimizeDeps: {
     esbuildOptions: {
