@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://dvo-regis.github.io/RavenDashboardKEDC/",
+  "homepage": "https://dvo-regis.github.io/RavenDashboardKEDC",
   "proxy": "https://api.mapbox.com",
   "scripts": {
     "predeploy": "npm run build",

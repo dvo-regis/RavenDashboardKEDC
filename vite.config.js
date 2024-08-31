@@ -25,7 +25,8 @@ export default defineConfig({
     exclude: [],
   },
   build: {
-    outDir: 'dist', // Change this if your output directory is different
+    outDir: 'dist', // Ensure this matches the directory you are deploying
+    base: '/RavenDashboardKEDC/', // Add this line
   },
   optimizeDeps: {
     esbuildOptions: {
