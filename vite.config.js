@@ -5,6 +5,7 @@ import fs from 'fs/promises';
 import svgr from '@svgr/rollup';
 
 export default defineConfig({
+  base: '/RavenDashboardKEDC/', // Add this line
   resolve: {
     alias: {
       src: resolve(__dirname, 'src'),
@@ -25,8 +26,7 @@ export default defineConfig({
     exclude: [],
   },
   build: {
-    outDir: 'dist', // Ensure this matches the directory you are deploying
-    base: '/RavenDashboardKEDC/', // Add this line
+    outDir: 'dist', // Change this if your output directory is different
   },
   optimizeDeps: {
     esbuildOptions: {
